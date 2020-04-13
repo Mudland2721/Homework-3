@@ -159,19 +159,105 @@ var userUpper = input3;
 var userSymbol = input4;
 var userLower = input5;
 
-function characterGenerator() {
+// made a function to make a password with all the chars
+function createPassword(event) {
+  event.preventDefault();
   Math.random(
+    arrLowerCasedCharacters,
     arrNumericCharacters,
     arrSpecialCharacters,
-    arrUpperCasedCharacters,
-    arrLowerCasedCharacters
+    arrUpperCasedCharacters
   );
 }
 
-// generatePassword;
+//made a function to get the pass didnt finish
+function getPassword() {
+  userNumbers;
+  userUpper;
+  userSymbol;
+  userLower;
+}
+
+//array to store types of char
+var arrOfStoredCharacters [arrLowerCasedCharacters, arrNumericCharacters, arrSpecialCharacters, arrUpperCasedCharacters]; 
+//array to use one of each
+var arrOneOfEach [""];
+
+
+//this is where i need help 
+
+
+
+
+
+
+
+
+// //FUNCTIONS
+// //declare Function to prompt user for password options
+// function getPassword() {
+//   // Variable to store length of password from user input
+//   var length = parseInt(
+//     prompt("How many characters would you like your password to contain?")
+//   );
+//   // Conditional statement to check if password length is a number. Prompts end if this evaluates false
+//   if (isNaN(length) === true) {
+//     alert("Password length must be provided as a number");
+//     return;
+//   }
+//   // Conditional statement to check if password length is at least 8 characters long. Prompts end if this evaluates false
+//   if (length < 8) {
+//     alert("Password length must be at least 8 characters");
+//     return;
+//   }
+//   // Conditional statement to check if password length is less than 128 characters long. Prompts end if this evaluates false
+//   // Variable to store boolean regarding the inclusion of special characters
+//   // Variable to store boolean regarding the inclusion of numeric characters
+//   // Variable to store boolean regarding the inclusion of lowercase characters
+//   // Variable to store boolean regarding the inclusion of uppercase characters
+//   // Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false. Finish up this if statement with the remaining variables above
+//   if (hasSpecialCharacters === false && hasNumericCharacters === false) {
+//     alert("You must select at least one special character type");
+//     return;
+//   }
+//   //create object to store user input.  We are using an object to store user input. finish the object based on the variables above
+//   var passwordOptions = {
+//     length: length,
+//     hasSpecialCharacters: hasSpecialCharacters,
+//   };
+//   return passwordOptions;
+// }
+// //Function to get a random element from an array
+// function getRandom() {
+//   //write code to get a random element
+// }
+// //Function to generate password with user input
+// function generatePassword(event) {
+//   //what does this evaluate to?
+//   var options = getPassword();
+//   //variable to store password as its being concatenated
+//   var result = [];
+//   //declare variable thats an array to store types of characters to include in password
+// }
+// //target element with id of generate
+// var generateBtn = document.querySelector("#generate");
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+//   passwordText.value = password;
+// }
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
+
+// function characterGenerator() {
+//   Math.random(
+//     arrNumericCharacters,
+//     arrSpecialCharacters,
+//     arrUpperCasedCharacters,
+//     arrLowerCasedCharacters
+//   );
+// }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-//Add submit button event listener
-// submitButton.addEventListener("click", generatePassword );
+// generateBtn.addEventListener("click", writePassword);
