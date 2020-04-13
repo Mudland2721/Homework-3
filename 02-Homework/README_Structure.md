@@ -1,16 +1,18 @@
 # 03 JavaScript: Password Generator
 
-[ ] Array of special characters to be included in password
-[ ] Array of numeric characters to be included in password
-[ ] Array of lowercase characters to be included in password
-[ ] Array of uppercase characters to be included in password
+[ x] Array of special characters to be included in password
+[ x] Array of numeric characters to be included in password
+[x ] Array of lowercase characters to be included in password
+[x ] Array of uppercase characters to be included in password
 
-[ ] Function to prompt user for password options
+[x ] Function to prompt user for password options
 //function getPasswordOptions()
+
 [ ] Variable to store length of password from user input
 [ ] Conditional statement to check if password length is a number. Prompts end if this evaluates false
 [ ] Conditional statement to check if password length is at least 8 characters long. Prompts end if this evaluates false
 [ ] Conditional statement to check if password length is less than 128 characters long. Prompts end if this evaluates false
+
 [ ] Variable to store boolean regarding the inclusion of special characters
 [ ] Variable to store boolean regarding the inclusion of numeric characters
 [ ] Variable to store boolean regarding the inclusion of lowercase characters
@@ -25,10 +27,14 @@
 
 [ ] Array to store types of characters to include in password
 [ ] Array to contain one of each type of chosen character to ensure each will be used
+
 [ ] Conditional statement that adds array of special characters into array of possible characters based on user input
+
 [ ] Push new random special character to guaranteedCharacters
+
 [ ] Conditional statement that adds array of numeric characters into array of possible characters based on user input
 [ ] Push new random special character to guaranteedCharacters
+
 [ ] Conditional statement that adds array of lowercase characters into array of possible characters based on user input
 [ ] Push new random lower-cased character to guaranteedCharacters
 [ ] Conditional statement that adds array of uppercase characters into array of possible characters based on user input
