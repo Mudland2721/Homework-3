@@ -1,4 +1,17 @@
 // VARIABLES
+var getPasswordOptions;
+var input1;
+var input2;
+var input3;
+var input4;
+var userHowManyCharacters;
+var userAnyNumbers;
+var userAnyUppercase;
+var userAnySymbols;
+var userNumbers;
+var userUpper;
+var userSymbol;
+var userLower;
 
 //declare an array of special characters
 var arrSpecialCharacters = [
@@ -97,26 +110,68 @@ function writePassword() {
   passwordText.value = password;
 }
 
-var getPasswordOptions;
-
 //FUNCTIONS
 //declare Function to prompt user for password options
-function generatePassord() {
-  var input = prompt("How many characters?");
-  var input = prompt("Any numbers?");
-  var input = prompt("Any uppercase?");
-  var input = prompt("Any symbols?");
+function generatePassword(event) {
+  event.preventDefault();
+  input1 = prompt("How many characters?");
+  input2 = confirm("Any numbers?");
+  input3 = confirm("Any uppercase?");
+  input4 = confirm("Any symbols?");
+  input5 = confirm("Any lowercase?");
 
   return getPasswordOptions;
 }
 
 //variables to store user input
-var userHowManyCharacters;
-var userAnyNumbers;
-var userAnyUppercase;
-var userAnySymbols;
 
-generatePassord();
+//function to store ALL user input
+
+function userInput(event) {
+  event.preventDefault();
+  userHowManyCharacters = input1.value;
+  userAnyNumbers = input2.value;
+  userAnyUppercase = input3.value;
+  userAnySymbols = input4.value;
+}
+userInput();
+
+userHowManyCharacters();
+if (typeof userHowManyCharacters !== "number") {
+  return true;
+} else if (typeof userHowManyCharacters === false) {
+  return false;
+} else if (userHowManyCharacters.value.length < 8) {
+  prompt("Must be 8 characters");
+  return false;
+} else if (userHowManyCharacters.value.length >= 128) {
+  prompt("Must be less than 128 characters");
+  return false;
+  //It will say false if 128
+} else if (userHowManyCharacters.value.length === 0) {
+  prompt("Must specify how many characters");
+  return;
+}
+
+// To store password input
+var userNumbers = input2;
+var userUpper = input3;
+var userSymbol = input4;
+var userLower = input5;
+
+function characterGenerator() {
+  Math.random(
+    arrNumericCharacters,
+    arrSpecialCharacters,
+    arrUpperCasedCharacters,
+    arrLowerCasedCharacters
+  );
+}
+
+// generatePassword;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//Add submit button event listener
+// submitButton.addEventListener("click", generatePassword );

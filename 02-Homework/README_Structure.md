@@ -8,16 +8,16 @@
 [x ] Function to prompt user for password options
 //function getPasswordOptions()
 
-[ ] Variable to store length of password from user input
-[ ] Conditional statement to check if password length is a number. Prompts end if this evaluates false
-[ ] Conditional statement to check if password length is at least 8 characters long. Prompts end if this evaluates false
-[ ] Conditional statement to check if password length is less than 128 characters long. Prompts end if this evaluates false
+[ x] Variable to store length of password from user input
+[x ] Conditional statement to check if password length is a number. Prompts end if this evaluates false
+[ x] Conditional statement to check if password length is at least 8 characters long. Prompts end if this evaluates false
+[x ] Conditional statement to check if password length is less than 128 characters long. Prompts end if this evaluates false
 
-[ ] Variable to store boolean regarding the inclusion of special characters
-[ ] Variable to store boolean regarding the inclusion of numeric characters
-[ ] Variable to store boolean regarding the inclusion of lowercase characters
-[ ] Variable to store boolean regarding the inclusion of uppercase characters
-[ ] Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false
+[ x] Variable to store boolean regarding the inclusion of special characters--4
+[x ] Variable to store boolean regarding the inclusion of numeric characters--2
+[x ] Variable to store boolean regarding the inclusion of lowercase characters
+[ x] Variable to store boolean regarding the inclusion of uppercase characters
+[x ] Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false-- not sure
 
 [ ] Object to store user input
 
