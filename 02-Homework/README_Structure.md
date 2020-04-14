@@ -19,14 +19,14 @@
 [ x] Variable to store boolean regarding the inclusion of uppercase characters
 [x ] Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false-- not sure
 
-[ ] Object to store user input
+[x ] Object to store user input
 
-[ ] Function for getting a random element from an array
+[x ] Function for getting a random element from an array
 
-[ ] Function to generate password with user input
+[x ] Function to generate password with user input
 
-[ ] Array to store types of characters to include in password
-[ ] Array to contain one of each type of chosen character to ensure each will be used
+[x ] Array to store types of characters to include in password
+[ no idea ] Array to contain one of each type of chosen character to ensure each will be used
 
 [ ] Conditional statement that adds array of special characters into array of possible characters based on user input
 
